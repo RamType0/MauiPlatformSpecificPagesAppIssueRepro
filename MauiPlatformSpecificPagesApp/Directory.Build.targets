@@ -1,0 +1,6 @@
+<Project>
+	<!-- Android -->
+	<ItemGroup Condition="'$(TargetFramework)' != 'net8.0-android'">
+		<RazorComponent Remove="**\Android\**\*.razor" />
+	</ItemGroup>
+</Project>
